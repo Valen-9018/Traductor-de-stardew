@@ -1,9 +1,15 @@
 {
-  "dependencies": { "hjson": "^3.2.2", "openai": "^4.14.0" },
-  "devDependencies": {
-    "vitest": "^1.5.0"
-  },
+  "name": "traductor-de-stardew",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Traduce al español los archivos i18n de mods de Stardew Valley con motores locales.",
+  "type": "module",
+  "engines": { "node": ">=22" },
   "scripts": {
-    "test": "vitest"
+    "traducir": "node traducir.js",
+    "test": "node --test pruebas/traductor.test.js"
+  },
+  "dependencies": {
+    "json5": "2.2.3"
   }
 }

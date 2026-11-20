@@ -1,2 +1,6 @@
-node_modules
+node_modules/
 .env
+.DS_Store
+
+# Traducción generada al probar el ejemplo.
+/ejemplos/i18n/es.json
