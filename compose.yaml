@@ -1,0 +1,13 @@
+services:
+  libretranslate:
+    image: libretranslate/libretranslate:v1.9.6
+    ports:
+      - "127.0.0.1:5000:5000"
+    environment:
+      LT_HOST: "0.0.0.0"
+      LT_THREADS: "1"
+    volumes:
+      - modelos_libretranslate:/home/libretranslate/.local
+
+volumes:
+  modelos_libretranslate:
